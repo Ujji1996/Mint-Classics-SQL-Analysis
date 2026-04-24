@@ -1,6 +1,6 @@
 # 📦 Mint Classics Inventory Optimization Analysis
 
-> 📌 Reduced inventory inefficiency by identifying overstocked products and aligning stock levels with actual sales demand using SQL-driven analysis.
+> 📌 Identified inventory inefficiencies by analyzing overstocked products and aligning stock levels with actual sales demand using SQL-driven analysis.
 
 ## 📌 Project Summary
 
