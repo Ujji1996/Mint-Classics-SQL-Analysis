@@ -1,5 +1,7 @@
 # 📦 Mint Classics Inventory Optimization Analysis
 
+> 📌 Reduced inventory inefficiency by identifying overstocked products and aligning stock levels with actual sales demand using SQL-driven analysis.
+
 ## 📌 Project Summary
 
 This project analyzes inventory and sales data from the Mint Classics dataset to uncover inefficiencies in stock management and provide actionable recommendations for inventory optimization.
@@ -56,6 +58,25 @@ Mint Classics dataset (simulated e-commerce inventory dataset)
 * A small percentage of products generate the majority of sales (Pareto effect)
 * High-performing products are not always sufficiently stocked
 * Significant opportunity to rebalance inventory across warehouses
+
+---
+
+## 🔑 Key SQL Highlight
+
+One of the core analyses identifies stock imbalance:
+
+```sql
+SELECT 
+    p.productName,
+    p.quantityInStock,
+    SUM(od.quantityOrdered) AS total_sold,
+    (p.quantityInStock - SUM(od.quantityOrdered)) AS stock_difference
+FROM products p
+JOIN orderdetails od 
+    ON p.productCode = od.productCode
+GROUP BY p.productName, p.quantityInStock
+ORDER BY stock_difference DESC;
+```
 
 ---
 
