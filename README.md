@@ -65,6 +65,7 @@ Mint Classics dataset (simulated e-commerce inventory dataset)
 
 This query highlights products with excess inventory compared to actual sales, helping identify overstocked items.
 
+stock_difference = inventory - sales
 ```sql
 SELECT 
     p.productName,
