@@ -1,11 +1,11 @@
 # 📦 Mint Classics Inventory Optimization (SQL-Based Business Analysis)
 
 📌 Identified overstocking risks and demand mismatches using SQL-driven analysis to improve inventory efficiency.
+📊 SQL-driven analysis to identify overstocking risks and optimize inventory efficiency in a retail business.
 
 ## 📌 Project Summary
 
-This project analyzes inventory and sales data from the Mint Classics dataset to uncover inefficiencies in stock management and provide actionable recommendations for inventory optimization.
-
+This project simulates real-world retail inventory challenges commonly faced by e-commerce and supply chain businesses.
 The goal is to align inventory levels with actual product demand and reduce unnecessary holding costs.
 
 ---
